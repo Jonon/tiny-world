@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://h414t7sxh0d2"]
+[gd_scene load_steps=29 format=3 uid="uid://b6q5dcs6tvncp"]
 
 [ext_resource type="Script" uid="uid://dsnydbix43pcb" path="res://scripts/npc_dwarf.gd" id="1_j7bw8"]
 [ext_resource type="Texture2D" uid="uid://dywx8u5hqod3d" path="res://assets/sprites/microFantasy.v0.4/characters/dwarf/dwarf_idle_01.png" id="1_s7p2j"]
@@ -123,6 +123,7 @@ script = ExtResource("1_j7bw8")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_tc444")
 animation = &"idle"
+autoplay = "idle"
 frame_progress = 0.875653
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
