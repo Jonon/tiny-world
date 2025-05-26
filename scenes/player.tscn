@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://bi0fsa7mf6wol"]
+[gd_scene load_steps=28 format=3 uid="uid://clf4uu3n2sunr"]
 
 [ext_resource type="Texture2D" uid="uid://ctkkhndsgk6up" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_idle_01.png" id="1_dqkch"]
 [ext_resource type="Script" uid="uid://bbc2g575uf2lh" path="res://scripts/player.gd" id="1_jej6c"]
