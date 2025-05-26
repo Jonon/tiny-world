@@ -134,7 +134,6 @@ script = ExtResource("1_jej6c")
 sprite_frames = SubResource("SpriteFrames_3v2ag")
 animation = &"walk"
 autoplay = "idle"
-frame_progress = 0.305778
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-3, 3)
