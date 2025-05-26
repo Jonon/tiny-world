@@ -106,3 +106,14 @@ position = Vector2(-39, -7)
 
 [node name="key" parent="." instance=ExtResource("5_iywne")]
 position = Vector2(4, -635)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -108.0
+offset_top = -64.0
+offset_right = -13.0
+offset_bottom = -11.0
+theme_override_font_sizes/font_size = 7
+text = "Hey, welcome to tiny worlds!
+Please, find my key so I can
+open this chest.
+But, please don't fall down!"
