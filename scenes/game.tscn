@@ -88,7 +88,7 @@ tile_set = SubResource("TileSet_yqjtg")
 position = Vector2(33, -42)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(-33, 42)
+position = Vector2(-4, 3)
 zoom = Vector2(5, 5)
 position_smoothing_enabled = true
 
