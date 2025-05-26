@@ -1,0 +1,57 @@
+[gd_scene load_steps=11 format=3 uid="uid://clf4uu3n2sunr"]
+
+[ext_resource type="Texture2D" uid="uid://ctkkhndsgk6up" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_idle_01.png" id="1_dqkch"]
+[ext_resource type="Texture2D" uid="uid://c8h05xoh17gb4" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_idle_02.png" id="2_qlg0r"]
+[ext_resource type="Texture2D" uid="uid://dhmgooxdrbf7d" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_idle_03.png" id="3_tuyoq"]
+[ext_resource type="Texture2D" uid="uid://bs3xa0k0p1ccv" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_idle_04.png" id="4_fjrip"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smehm"]
+atlas = ExtResource("1_dqkch")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ur7pv"]
+atlas = ExtResource("2_qlg0r")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y4r1p"]
+atlas = ExtResource("3_tuyoq")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2wvv"]
+atlas = ExtResource("4_fjrip")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3v2ag"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smehm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ur7pv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y4r1p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2wvv")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.5
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dqkch"]
+radius = 4.0
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_3v2ag")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.549947
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 3)
+shape = SubResource("CircleShape2D_dqkch")
