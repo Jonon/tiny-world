@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://duq7nc7vo3ijq"]
+
+[ext_resource type="Texture2D" uid="uid://cvi1uoj2gklxr" path="res://assets/sprites/microFantasy.v0.4/items/key_gold.png" id="1_yk2u2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fttkb"]
+atlas = ExtResource("1_yk2u2")
+region = Rect2(0, 0, 7, 12)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wy8tx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fttkb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_brs3p"]
+radius = 1.0
+height = 4.0
+
+[node name="key" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_wy8tx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_brs3p")

@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=4 uid="uid://dbqmt8fh4lhkc"]
+[gd_scene load_steps=10 format=4 uid="uid://dbqmt8fh4lhkc"]
 
 [ext_resource type="Texture2D" uid="uid://dp8rpietreb60" path="res://assets/sprites/microFantasy.v0.4/tilesets/platformer.png" id="1_uwrxv"]
 [ext_resource type="PackedScene" uid="uid://c5r43bwqgrwaw" path="res://scenes/dwarf_chest.tscn" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://b6q5dcs6tvncp" path="res://scenes/npc_dwarf.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://clf4uu3n2sunr" path="res://scenes/player.tscn" id="4_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://duq7nc7vo3ijq" path="res://scenes/key.tscn" id="5_iywne"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uwrxv"]
 texture = ExtResource("1_uwrxv")
@@ -102,3 +103,6 @@ position = Vector2(-51.385, -3.49)
 
 [node name="npc_dwarf" parent="." instance=ExtResource("3_lnu2h")]
 position = Vector2(-39, -7)
+
+[node name="key" parent="." instance=ExtResource("5_iywne")]
+position = Vector2(4, -635)
