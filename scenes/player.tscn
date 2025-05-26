@@ -1,0 +1,128 @@
+[gd_scene load_steps=28 format=3 uid="uid://bi0fsa7mf6wol"]
+
+[ext_resource type="Texture2D" uid="uid://ctkkhndsgk6up" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_idle_01.png" id="1_dqkch"]
+[ext_resource type="Script" uid="uid://bbc2g575uf2lh" path="res://scripts/player.gd" id="1_jej6c"]
+[ext_resource type="Texture2D" uid="uid://c8h05xoh17gb4" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_idle_02.png" id="2_qlg0r"]
+[ext_resource type="Texture2D" uid="uid://dhmgooxdrbf7d" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_idle_03.png" id="3_tuyoq"]
+[ext_resource type="Texture2D" uid="uid://bs3xa0k0p1ccv" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_idle_04.png" id="4_fjrip"]
+[ext_resource type="Texture2D" uid="uid://ci83ucyoipob7" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_run_01.png" id="5_3v2ag"]
+[ext_resource type="Texture2D" uid="uid://dvbdhp123b0vl" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_run_02.png" id="6_jej6c"]
+[ext_resource type="Texture2D" uid="uid://dskhq4avh03y7" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_run_03.png" id="7_f1ej7"]
+[ext_resource type="Texture2D" uid="uid://dug852j81nfrh" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_run_04.png" id="8_oprun"]
+[ext_resource type="Texture2D" uid="uid://bpmy6cxykxg14" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_run_05.png" id="9_a8ls1"]
+[ext_resource type="Texture2D" uid="uid://cxlicg0x56kgh" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_run_06.png" id="10_qfm1y"]
+[ext_resource type="Texture2D" uid="uid://pc32lr3f3ghk" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_run_07.png" id="11_fulsm"]
+[ext_resource type="Texture2D" uid="uid://bka8sbklcdth3" path="res://assets/sprites/microFantasy.v0.4/characters/knight_red/knight_red_run_08.png" id="12_4r5pv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smehm"]
+atlas = ExtResource("1_dqkch")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ur7pv"]
+atlas = ExtResource("2_qlg0r")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y4r1p"]
+atlas = ExtResource("3_tuyoq")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2wvv"]
+atlas = ExtResource("4_fjrip")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_60mlk"]
+atlas = ExtResource("5_3v2ag")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4ail"]
+atlas = ExtResource("6_jej6c")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a38lo"]
+atlas = ExtResource("7_f1ej7")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ni07"]
+atlas = ExtResource("8_oprun")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l71n6"]
+atlas = ExtResource("9_a8ls1")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ke2ow"]
+atlas = ExtResource("10_qfm1y")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ujl30"]
+atlas = ExtResource("11_fulsm")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31cv2"]
+atlas = ExtResource("12_4r5pv")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3v2ag"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smehm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ur7pv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y4r1p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2wvv")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.5
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_60mlk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i4ail")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a38lo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ni07")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l71n6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ke2ow")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ujl30")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31cv2")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 4.5
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dqkch"]
+radius = 4.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_jej6c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_3v2ag")
+animation = &"walk"
+autoplay = "idle"
+frame_progress = 0.659874
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 3)
+shape = SubResource("CircleShape2D_dqkch")
