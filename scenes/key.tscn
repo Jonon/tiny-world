@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://duq7nc7vo3ijq"]
+[gd_scene load_steps=7 format=3 uid="uid://duq7nc7vo3ijq"]
 
+[ext_resource type="Script" uid="uid://d3y2dg4kbxoga" path="res://scripts/key.gd" id="1_fttkb"]
 [ext_resource type="Texture2D" uid="uid://cvi1uoj2gklxr" path="res://assets/sprites/microFantasy.v0.4/items/key_gold.png" id="1_yk2u2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fttkb"]
@@ -21,7 +22,19 @@ animations = [{
 radius = 1.0
 height = 4.0
 
+[sub_resource type="GDScript" id="GDScript_wy8tx"]
+script/source = "extends CollisionShape2D
+
+
+
+
+
+func _on_key_body_entered(body: Node2D) -> void:
+	print(\"I have the key\")
+"
+
 [node name="key" type="Area2D"]
+script = ExtResource("1_fttkb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.5, 0.5)
@@ -29,3 +42,6 @@ sprite_frames = SubResource("SpriteFrames_wy8tx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_brs3p")
+script = SubResource("GDScript_wy8tx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

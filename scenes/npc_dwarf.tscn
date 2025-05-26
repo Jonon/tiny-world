@@ -1,6 +1,5 @@
-[gd_scene load_steps=29 format=3 uid="uid://b6q5dcs6tvncp"]
+[gd_scene load_steps=28 format=3 uid="uid://b6q5dcs6tvncp"]
 
-[ext_resource type="Script" uid="uid://dsnydbix43pcb" path="res://scripts/npc_dwarf.gd" id="1_j7bw8"]
 [ext_resource type="Texture2D" uid="uid://dywx8u5hqod3d" path="res://assets/sprites/microFantasy.v0.4/characters/dwarf/dwarf_idle_01.png" id="1_s7p2j"]
 [ext_resource type="Texture2D" uid="uid://dkxywwlibjah6" path="res://assets/sprites/microFantasy.v0.4/characters/dwarf/dwarf_idle_02.png" id="2_j7bw8"]
 [ext_resource type="Texture2D" uid="uid://dj4jbykh3vfi6" path="res://assets/sprites/microFantasy.v0.4/characters/dwarf/dwarf_idle_03.png" id="3_kop4m"]
@@ -118,7 +117,6 @@ radius = 3.0
 radius = 9.0
 
 [node name="npc_dwarf" type="CharacterBody2D"]
-script = ExtResource("1_j7bw8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_tc444")
